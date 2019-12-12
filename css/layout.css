@@ -1,8 +1,9 @@
+/*Home Page*/
+
 * {
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 @font-face {
     font-family: 'tesla';
@@ -17,10 +18,11 @@ body {
 .grid-container {
     display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
     background-image: url("../images/red-roadster.jpg");
     background-attachment: fixed;
     background-position: center;
+    height: 100vh;
 }
 
 /*Tesla Button*/
@@ -28,7 +30,7 @@ body {
     grid-row: 1/2;
     grid-column: 1/5;
     padding: 1.2%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: 'tesla';
 }
 
@@ -45,12 +47,12 @@ body {
 
 .tesla a:hover {
     transition: 0.3s ease;
-    color: #ddd;
+    color: #979797;
     text-decoration: none;
 }
 
 .tesla a:active {
-    color: #ddd;
+    color: #979797;
     text-decoration: none;
 }
 
@@ -58,18 +60,73 @@ body {
 
 .navigation {
     grid-row: 1/2;
-    grid-column: 1/6;
+    grid-column: 1/7;
     text-align: center;
+}
+
+.navigation {
+    padding: 0.9%;
 }
 
 .navigation a {
     padding: 1%;
     color: black;
     text-decoration: none;
-    font-size: 1.5vw;
-    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    font-family: 'Exo 2', sans-serif;
     font-weight: bold;
+    transition: 0.3s ease;
 }
+
+.navigation a:hover {
+    color: #979797;
+    transition: 0.3s ease;
+}
+
+.navigation a:link {
+    color: #979797;
+    transition: 0.3s ease;
+}
+
+.navigation a:active {
+    color: #979797;
+}
+
+/*Hover Paragraphs*/
+
+.b1 {
+    grid-row: 2/4;
+    grid-column: 1/4;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.b2 {
+    grid-row: 2/4;
+    grid-column: 4/7;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.home-button {
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    border-radius: 5vw;
+    border: 0.15vw solid black;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease;
+    color: black;
+}
+
+.home-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.3s ease;
+}
+
 /*Specifications Page*/ 
 .grid-container2{ 
         display: grid;
