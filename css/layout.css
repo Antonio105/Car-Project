@@ -190,7 +190,6 @@ body {
         background-position: center;
         background-size: cover;
     }
-
     .tesla2 {
         grid-row: 1;
         grid-column: 1; 
@@ -218,7 +217,7 @@ body {
         column-span: 2 / 5; 
         font-family: 'Exo 2', sans-serif;  
         padding: 5%;
-        margin-top: 15%;
+        margin-top: 0vw;
     } 
     .box1{ 
         grid-row: 2/5;
@@ -245,7 +244,8 @@ body {
     
     .navigation2 a:hover {
         color: black;
-        transition: 0.3s ease;
+        transition: 0.3s ease; 
+        background-color: white;
     }
     
     .navigation2 a:link {
@@ -262,8 +262,53 @@ body {
         border: black 2% solid; 
         border-collapse: separate;
     }
-    th{ 
-        
+
+    .scroll-button {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        background-color: white;
+        font-size: 1vw; 
+        margin-left: 40%; 
+        border: 5% white solid; 
+        font-family: 'tesla';
+        border-radius: 50% 50% 0% 0%; 
+        padding-left: 5%;
+        padding-right: 5%; 
+        padding-top: 2%;
+        padding-bottom: 2%; 
+        margin-top: 2vw;
+    }
+    .info1{
+        margin-left: 5%;
+        grid-column: 1; 
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black;
+        margin-bottom: 50%; 
+        height: 100%;
+    } 
+    .info2{
+        grid-column: 3;
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black; 
+        margin-bottom: 50%;
+        height: 100%;
+    } 
+    .info3{
+        margin-right: 5%;
+        grid-column: 5; 
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black;
+        margin-bottom: 50%;
+        height: 100%;
     }
 
 /*FAQ*/
