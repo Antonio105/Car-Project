@@ -10,6 +10,8 @@
     src: url('fonts/TESLA.ttf') format('truetype');
 }
 
+@media only screen and (min-width: 700px) and (max-width: 2500px) {
+
 body {
     width: 100%;
     height: 100%;
@@ -21,6 +23,7 @@ body {
     grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
     background-image: url("../images/red-roadster.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
@@ -177,6 +180,353 @@ body {
     color: black;
 }
 
+}
+
+@media only screen and (min-width: 351px) and (max-width: 699px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+        
+    .grid-container {
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+        background-image: url("../images/red-roadster.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    
+    /*Tesla Button*/
+    .tesla {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        padding: 1.2%;
+        font-size: 2.5vw;
+        font-family: 'tesla'; 
+        color: black;
+    }
+    
+    .tesla a {
+        color: black;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .tesla a:link {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .tesla a:hover {
+        transition: 0.3s ease;
+        color: #979797;
+        text-decoration: none;
+    }
+    
+    .tesla a:active {
+        color: #979797;
+        text-decoration: none;
+    }
+    
+    /*Navigation Bar*/
+    
+    .navigation {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        text-align: center;
+    }
+    
+    .navigation {
+        padding: 0.9%;
+    }
+    
+    .navigation a {
+        padding: 1%;
+        color: black;
+        text-decoration: none;
+        font-size: 2vw;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:hover {
+        color: #979797;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:link {
+        color: #979797;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:active {
+        color: #979797;
+    }
+    
+    /*Hover Paragraphs*/
+    
+    .b1 {
+        grid-row: 2/4;
+        grid-column: 1/4;
+        text-align: right;
+        padding-right: 5%;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .b2 {
+        grid-row: 2/4;
+        grid-column: 4/7;
+        text-align: left;
+        padding-left: 5%;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .home-button {
+        padding-top: 1%;
+        padding-bottom: 1.5%; 
+        padding-left: 12%;
+        padding-right: 12%;
+        border-radius: 5vw;
+        border: 0.15vw solid black;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 1vw;
+        background-color: rgba(255, 255, 255, 0.4);
+        transition: 0.3s ease;
+        color: black;
+    }
+    
+    .home-button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transition: 0.3s ease;
+        padding-bottom: 5%;
+    }
+    
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .dropdown .home-button {
+        padding-top: 3%;
+        padding-bottom: 3.5%; 
+        padding-left: 32%;
+        padding-right: 32%;
+    
+    }
+    
+    .droptext{ 
+        text-align: left;
+    }
+    
+    .dropdown div {
+        z-index: 1;
+        visibility: hidden;
+        transition: 0.1s ease;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 0.15vw solid black;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        border-radius: 2vw;
+    }
+    
+    .dropdown:hover div {
+        visibility: visible;
+        transition: 0.3s ease;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    .dropdown div p {
+        display: block;
+        text-decoration: none;
+        padding: 5%;
+        color: black;
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+        
+    .grid-container {
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+        background-image: url("../images/red-roadster.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    
+    /*Tesla Button*/
+    .tesla {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        padding: 1.2%;
+        font-size: 2.5vw;
+        font-family: 'tesla'; 
+        color: black;
+    }
+    
+    .tesla a {
+        color: black;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .tesla a:link {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .tesla a:hover {
+        transition: 0.3s ease;
+        color: #979797;
+        text-decoration: none;
+    }
+    
+    .tesla a:active {
+        color: #979797;
+        text-decoration: none;
+    }
+    
+    /*Navigation Bar*/
+    
+    .navigation {
+        grid-row: 1/2;
+        grid-column: 1/7;
+        text-align: center;
+    }
+    
+    .navigation {
+        padding: 0.9%;
+    }
+    
+    .navigation a {
+        padding: 1%;
+        color: black;
+        text-decoration: none;
+        font-size: 2vw;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:hover {
+        color: #979797;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:link {
+        color: #979797;
+        transition: 0.3s ease;
+    }
+    
+    .navigation a:active {
+        color: #979797;
+    }
+    
+    /*Hover Paragraphs*/
+    
+    .b1 {
+        grid-row: 2/4;
+        grid-column: 1/4;
+        text-align: right;
+        padding-right: 5%;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .b2 {
+        grid-row: 2/4;
+        grid-column: 4/7;
+        text-align: left;
+        padding-left: 5%;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .home-button {
+        padding-top: 1%;
+        padding-bottom: 1.5%; 
+        padding-left: 12%;
+        padding-right: 12%;
+        border-radius: 5vw;
+        border: 0.15vw solid black;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 1vw;
+        background-color: rgba(255, 255, 255, 0.4);
+        transition: 0.3s ease;
+        color: black;
+    }
+    
+    .home-button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        transition: 0.3s ease;
+        padding-bottom: 5%;
+    }
+    
+    .dropdown {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .dropdown .home-button {
+        padding-top: 3%;
+        padding-bottom: 3.5%; 
+        padding-left: 32%;
+        padding-right: 32%;
+    
+    }
+    
+    .droptext{ 
+        text-align: left;
+    }
+    
+    .dropdown div {
+        z-index: 1;
+        visibility: hidden;
+        transition: 0.1s ease;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 0.15vw solid black;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 1vw;
+        font-weight: bold;
+        border-radius: 2vw;
+    }
+    
+    .dropdown:hover div {
+        visibility: visible;
+        transition: 0.3s ease;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    .dropdown div p {
+        display: block;
+        text-decoration: none;
+        padding: 5%;
+        color: black;
+    }
+    
+}
+ 
+@media only screen and (min-width: 700px) and (max-width: 2500px) {
 
 /*Specifications Page*/ 
 .grid-container2{ 
@@ -220,10 +570,13 @@ body {
         margin-top: 0vw;
     } 
     .box1{ 
+        background-color: black;
+        margin-top: 80%;
         grid-row: 2/5;
         grid-column: 1/6; 
         padding-top: 50vh;
     }
+    
     .navigation2 {
         padding-top: 1%; 
         text-align: center;
@@ -310,7 +663,288 @@ body {
         margin-bottom: 50%;
         height: 100%;
     }
+}
 
+@media only screen and (min-width: 351px) and (max-width: 699px) {
+
+    /*Specifications Page*/ 
+.grid-container2{ 
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/white-roadster.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.tesla2 {
+    grid-row: 1;
+    grid-column: 1; 
+    color: white;
+    text-decoration: white; 
+    font-size: 200%;
+    padding: 3.5%;
+}
+
+.tesla2 a{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    font-size: 2.5vw;
+    font-family: 'tesla'; 
+    color: white; 
+    text-decoration: white none; 
+} 
+.tesla2 a:active{ 
+    color: black;
+    text-decoration: none black;
+} 
+.specp{ 
+    background-color: white;
+    font-size: 2vw; 
+    column-span: 2 / 5; 
+    font-family: 'Exo 2', sans-serif;  
+    padding: 5%;
+    margin-top: 0vw;
+} 
+.box1{ 
+    background-color: black;
+    margin-top: 80%;
+    grid-row: 2/5;
+    grid-column: 1/6; 
+    padding-top: 50vh;
+}
+
+.navigation2 {
+    padding-top: 1%; 
+    text-align: center;
+
+    grid-row: 1;
+    grid-column: 1/6;
+}
+
+.navigation2 a {
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navigation2 a:hover {
+    color: black;
+    transition: 0.3s ease; 
+    background-color: white;
+}
+
+.navigation2 a:link {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navigation2 a:active {
+    color: white;
+} 
+table{ 
+    size: 100%;
+    font-size: 200%;
+    border: black 2% solid; 
+    border-collapse: separate;
+}
+
+.scroll-button {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    background-color: white;
+    font-size: 1vw; 
+    margin-left: 40%; 
+    border: 5% white solid; 
+    font-family: 'tesla';
+    border-radius: 50% 50% 0% 0%; 
+    padding-left: 5%;
+    padding-right: 5%; 
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    margin-top: 2vw;
+}
+.info1{
+    margin-left: 5%;
+    grid-column: 1; 
+    grid-row: 2;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 5%;
+    border: 0.5vw solid black;
+    margin-bottom: 50%; 
+    height: 100%;
+} 
+.info2{
+    grid-column: 3;
+    grid-row: 2;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 5%;
+    border: 0.5vw solid black; 
+    margin-bottom: 50%;
+    height: 100%;
+} 
+.info3{
+    margin-right: 5%;
+    grid-column: 5; 
+    grid-row: 2;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 5%;
+    border: 0.5vw solid black;
+    margin-bottom: 50%;
+    height: 100%;
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+/*Specifications Page*/ 
+.grid-container2{ 
+        display: grid;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/white-roadster.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .tesla2 {
+        grid-row: 1;
+        grid-column: 1; 
+        color: white;
+        text-decoration: white; 
+        font-size: 200%;
+        padding: 3.5%;
+    }
+
+    .tesla2 a{
+        grid-row: 1/2;
+        grid-column: 1/5;
+        font-size: 2.5vw;
+        font-family: 'tesla'; 
+        color: white; 
+        text-decoration: white none; 
+    } 
+    .tesla2 a:active{ 
+        color: black;
+        text-decoration: none black;
+    } 
+    .specp{ 
+        background-color: white;
+        font-size: 2vw; 
+        column-span: 2 / 5; 
+        font-family: 'Exo 2', sans-serif;  
+        padding: 5%;
+        margin-top: 0vw;
+    } 
+    .box1{ 
+        background-color: black;
+        margin-top: 80%;
+        grid-row: 2/5;
+        grid-column: 1/6; 
+        padding-top: 50vh;
+    }
+    
+    .navigation2 {
+        padding-top: 1%; 
+        text-align: center;
+
+        grid-row: 1;
+        grid-column: 1/6;
+    }
+    
+    .navigation2 a {
+        padding: 1%;
+        color: white;
+        text-decoration: none;
+        font-size: 2vw;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+    
+    .navigation2 a:hover {
+        color: black;
+        transition: 0.3s ease; 
+        background-color: white;
+    }
+    
+    .navigation2 a:link {
+        color: white;
+        transition: 0.3s ease;
+    }
+    
+    .navigation2 a:active {
+        color: white;
+    } 
+    table{ 
+        size: 100%;
+        font-size: 200%;
+        border: black 2% solid; 
+        border-collapse: separate;
+    }
+
+    .scroll-button {
+        grid-row: 1/2;
+        grid-column: 1/5;
+        background-color: white;
+        font-size: 1vw; 
+        margin-left: 40%; 
+        border: 5% white solid; 
+        font-family: 'tesla';
+        border-radius: 50% 50% 0% 0%; 
+        padding-left: 5%;
+        padding-right: 5%; 
+        padding-top: 2%;
+        padding-bottom: 2%; 
+        margin-top: 2vw;
+    }
+    .info1{
+        margin-left: 5%;
+        grid-column: 1; 
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black;
+        margin-bottom: 50%; 
+        height: 100%;
+    } 
+    .info2{
+        grid-column: 3;
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black; 
+        margin-bottom: 50%;
+        height: 100%;
+    } 
+    .info3{
+        margin-right: 5%;
+        grid-column: 5; 
+        grid-row: 2;
+        overflow: scroll;
+        background-color: white;
+        border-radius: 5%;
+        border: 0.5vw solid black;
+        margin-bottom: 50%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2500px) {
 /*FAQ*/
 .grid-container3 {
     display: grid;
@@ -319,6 +953,7 @@ body {
     background-image: url("../images/energy.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     height: 100vh;
 }
@@ -328,21 +963,213 @@ body {
 table.first {
     border-radius: 4%;
     padding: 10%;
+    margin-top: -5vw;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-left: 35%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.second {
+    border-radius: 4%;
+    padding: 10%;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: -18.7vw;
+    margin-left: 320%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.third {
+    border-radius: 4%;
+    padding: 10%;
     margin-top: -25%;
     table-layout: auto;
     border-spacing: 1px;
     text-align: center;
-    font-size: 125%;
-    margin-left: auto;
+    font-size: 1.2vw;
+    margin-top: 10%;
+    margin-left: 175%;
     margin-right: auto;
     grid-row: 1/3;
-    grid-column: 1/5;
+    grid-column: 4/5;
     font-family: 'Exo 2', sans-serif;
-    width: 250%;
-    background-color: rgba(255, 255, 255, 0.6); 
+    height: 20vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
 }
 
 td.v1 {
     font-size: 150%;
     font-weight: bold;
 }
+
+}
+
+@media only screen and (min-width: 351px) and (max-width: 699px) {
+ /*FAQ*/
+.grid-container3 {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    background-image: url("../images/energy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/*FAQ Table*/
+
+table.first {
+    border-radius: 4%;
+    padding: 10%;
+    margin-top: -7vw;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-left: 35%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.second {
+    border-radius: 4%;
+    padding: 10%;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: -19.3vw;
+    margin-left: 320%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.third {
+    border-radius: 4%;
+    padding: 10%;
+    margin-top: -25%;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 10%;
+    margin-left: 175%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 4/5;
+    font-family: 'Exo 2', sans-serif;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+td.v1 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+ /*FAQ*/
+.grid-container3 {
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    background-image: url("../images/energy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/*FAQ Table*/
+
+table.first {
+    border-radius: 4%;
+    padding: 10%;
+    margin-top: -9vw;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-left: 35%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.second {
+    border-radius: 4%;
+    padding: 10%;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: -19.4vw;
+    margin-left: 320%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    font-family: 'Exo 2', sans-serif;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+table.third {
+    border-radius: 4%;
+    padding: 10%;
+    margin-top: -25%;
+    table-layout: auto;
+    border-spacing: 1px;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    margin-left: 175%;
+    margin-right: auto;
+    grid-row: 1/3;
+    grid-column: 4/5;
+    font-family: 'Exo 2', sans-serif;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.75); 
+}
+
+td.v1 {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+}
+
